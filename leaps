@@ -9,16 +9,16 @@ def century(s):
     y=int
     debut = (s-1) * 100 + 1
     fin = s * 100
-    for i in range(debut,fin+1):
+    for i in range(debut,fin):
         if year(i)==True:
-            print('this year is leap')
-        else :
-            print('this year doesn t leap', i)
+            print('this year is leap',i)
+#         else :
+#             print('this year doesn t leap', i)
 y= int(input("write the year "))
 if year(y)==True:
     print('this year is leap')
-else:
-    print('this year doesn t leap')
+# else:
+#     print('this year doesn t leap')
 s=y//100
 century(s)
    
